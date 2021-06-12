@@ -9,7 +9,7 @@ LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 
 RUN apt-get update -y \
  && mkdir -p /usr/share/man/man1mkdir -p /usr/share/man/man1 \
- && apt-get install -y openjdk-15-jre-headless \
+ && apt-get install -y openjdk-16-jre-headless \
  && apt-get install -y curl ca-certificates openssl git tar netcat sqlite webp fontconfig tzdata iproute2 openjdk-16-dbg \
  && useradd -d /home/container -m container
  
